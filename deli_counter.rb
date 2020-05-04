@@ -15,6 +15,7 @@ def now_serving(katz_deli)
   else
     puts "Now serving #{katz_deli.first}"
     katz_deli.shift
+  end
 end
 
 def take_a_number(katz_deli, new_customer)
