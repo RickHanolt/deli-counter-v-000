@@ -4,7 +4,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     puts "The line is currently: #{(katz_deli.each_with_index{|customer,index| "#{index+1}. #{customer}"}).join(" ")}"
-
+    updated_queue = []
+    katz_deli.each_with_index{|customer,index| updated_queue << "#{index+1}. #{customer}"}
+    puts "The line is currently: #{updated_queue.join(" ")}"
   end
 end
 
