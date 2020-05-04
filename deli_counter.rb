@@ -10,7 +10,11 @@ def line(katz_deli)
 end
 
 def now_serving(katz_deli)
-
+  if katz_deli == []
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Now serving #{katz_deli.first}"
+    katz_deli.shift
 end
 
 def take_a_number(katz_deli, new_customer)
